@@ -112,6 +112,13 @@
     color: rgb(196, 176, 64);
     font-weight: bolder;
 }
+#titulonovedades{
+    font-size: 27px;
+    color: #7dba2d;
+    margin-left: 24px;
+    font-family: "calibri", "Courier New", monospace;
+    margin-top: 2%;
+}
 
   #button-green{
 
@@ -122,9 +129,11 @@ border-style: solid;
 border-radius: 5px;
 } 
 
-#noticias{
-
-    padding-top: 47px;
 
 
+#quitarsub{
+
+text-decoration: none;
+
+color: #37b3d8;
 }
