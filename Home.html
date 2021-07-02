@@ -1,213 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./img/favicon.ico" />
-    <title>Centro Médico Tucumán</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
-      <div class="container-fluid ">
-          <img src="https://trello-attachments.s3.amazonaws.com/60cbe62728384237ca13ec99/60d7419cf19b0e3c312b7623/16bda16bb1a80bcecccc19c181e48563/logoFinal.png" width="10%" height="10%" alt="logoclinica">
-          <!--<a class="navbar-brand" href="#">XV</a!-->
-          <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon "></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Institucional</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" href="#">Profesionales</a>
-                  </li>
-                  <li class="nav-item bg-success rounded-3 ">
-                      <a class="nav-link active" aria-current="page" href="#">Turnos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                  </li>
 
-                  <li class="nav-item bg-success  rounded-3   ">
-                      <a class="nav-link active  " aria-current="page" href="#">Login</a>
-                  </li>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <title>Centro Médico Tucumán</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- START NAVBAR -->
+  <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark   ">
+    <div class="container-fluid ">
+      <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
+
+      <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class=" nav-item ms-5   ">
+            <a class="nav-link active " aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Institucional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Profesionales</a>
+          </li>
+          <li class="nav-item  bg rounded-3 ">
+            <button class="btn btn " id="button-green" aria-current="page" href="#">Turnos</button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+          </li>
 
 
+        </ul>
 
 
-                  <!--<li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Desplegable
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                              <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>-->
-              </ul>
+        <form class="d-flex">
 
+          <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
+          <button class="btn btn-success me-3" id="button" type="submit">Buscar</button>
 
-              <form class="d-flex">
-
-
-                  <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
-                  <button class="btn btn-success" type="submit">Buscar</button>
-              </form>
-          </div>
+          <button class="btn btn-outline-success" id="button" type="submit">Login</button>
+        </form>
       </div>
+    </div>
 
   </nav>
-    <!--Start Carrousel-->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/1.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-title">
-            <p>ELEGÍ EL PROFESIONAL QUE VOS PREFIERAS</p>
-          </div>
-          <div class="carousel-subtitle">
-            <p>
-              <i>Contamos con una amplia gama de especialidades para brindarte
-                la mejor atención.</i>
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/2.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-title">
-            <p>TECNOLOGÍA DE ÚLTIMA GENERACIÓN</p>
-          </div>
-          <div class="carousel-subtitle">
-            <p>
-              <i>Tenemos lo último en tecnología para realizar tus estudios.</i>
-            </p>
-          </div>
-        </div>
-        
-        <div class="carousel-item">
-          <img src="./img/3.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-title">
-            <p>INSTALACIONES CÓMODAS Y MODERNAS</p>
-          </div>
-          <div class="carousel-subtitle">
-            <p>
-              <i>Conoce nuestra sala de espera climatizada.</i>
-            </p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+  <!-- END NAVBAR -->
+  <!--Start Carrousel-->
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
-    <!--End Carrousel-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/1.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-title">
+          <p>ELEGÍ EL PROFESIONAL QUE VOS PREFIERAS</p>
+        </div>
+        <div class="carousel-subtitle">
+          <p>
+            <i>Contamos con una amplia gama de especialidades para brindarte
+              la mejor atención.</i>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/2.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-title">
+          <p>TECNOLOGÍA DE ÚLTIMA GENERACIÓN</p>
+        </div>
+        <div class="carousel-subtitle">
+          <p>
+            <i>Tenemos lo último en tecnología para realizar tus estudios.</i>
+          </p>
+        </div>
+      </div>
 
-        <!-- cards groupo -->
-        <div class="row row-cols-1 row-cols-lg-6 g-3 text-center pt-5 p-5">
-          <div class="col">
-            <div class="card h-100 shadow">
-              <img src="./img/imagen11.jpg" class="card-img-top" alt="imagen de una vacuna sinopharm">
-              <div class="card-body">
-                <h5 class="card-title">Acuerdo con Sinopharm: 24 millones de nuevas dosis</a> </h5>
-                <p class="card-text">Carla Vizotti informo que gobierno nacional  firmó un nuevo contrato con el laboratorio chino Sinopharm por 24 millones de vacunas [...]</p>
-              </div>
-              <div class="card-footer">
-                  <a href="Noticias.html" class="btn btn-success btn-sm ">Ver más</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 shadow">
-              <img src="./img/imagen22 (2).jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mayores de 30 que no sacan turno: 50% de reacios a la vacuna</h5>
-                <p class="card-text">Los jóvenes tucumanos son reacios a la colocación de la vacuna contra el covid-19 [...]</p>
-              </div>
-              <div class="card-footer">
-                  <a href="Noticias.html" class="btn btn-success btn-sm">Ver más</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 shadow">
-              <img src="./img/imagen33.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">“La OMS ruega por vacunas para los países pobres”.</h5>
-                <p class="card-text">Hay naciones que están inoculando a población que no corre riesgo, mientras que el mecanismo Covax se queda sin dosis [...] </p>
-              </div>
-              <div class="card-footer">
-                  <a href="https://www.lagaceta.com.ar/nota/899696/actualidad/oms-ruega-vacunas-para-paises-pobres.html" class="btn btn-success btn-sm">Ver más</a>
-              </div>
-            </div>
-          </div>
+      <div class="carousel-item">
+        <img src="./img/3.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-title">
+          <p>INSTALACIONES CÓMODAS Y MODERNAS</p>
+        </div>
+        <div class="carousel-subtitle">
+          <p>
+            <i>Conoce nuestra sala de espera climatizada.</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--End Carrousel-->
+
+  <div class="card mb-3 mt-3 shadow p-1" style="">
+    <div class="row g-0">
+      <div class="col-md-7">
+        <img src="./img/card-prevencion.png" id="imgprevencion" name="imgprevencion" class="img-fluid"
+          alt="oms-recomendaciones">
+      </div>
+      <div class="col-md-5">
+        <div class="card-body" id="aviso" name="aviso">
+          <h3 class="card-title text-center" id="tituloaviso" name="tituloaviso">Importante!</h3><br>
+          <p class="card-text " id="sintomas" name="sintomas">
+            *No asistir si presenta síntomas de covid (dolor de cabeza, náuseas, fiebre, cansancio.)
+            <br> <br>
+
+            *Se toma la temperatura al ingresar. <br> <br>
+            *Presentarse 10 minutos antes del turno asignado. <br> <br>
+            *No ir con acompañantes de no ser necesario. <br> <br>
+          <p class="card-text" id="sintomas" name="sintomas"><small class="text">**Recuerde que puede reprogramar su
+              turno ante
+              cualquier eventualidad.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- cards groupo -->
+  <div class="row row-cols-1 row-cols-lg-6 g-3 text-center pt-5 p-5">
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="./img/imagen11.jpg" class="card-img-top" alt="imagen de una vacuna sinopharm">
+        <div class="card-body">
+          <h5 class="card-title">Acuerdo con Sinopharm: 24 millones de nuevas dosis</a> </h5>
+          <p class="card-text">Carla Vizotti informo que gobierno nacional firmó un nuevo contrato con el laboratorio
+            chino Sinopharm por 24 millones de vacunas [...]</p>
+        </div>
+        <div class="card-footer">
+          <a href="Noticias.html" class="btn btn-success btn-sm ">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="./img/imagen22 (2).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mayores de 30 que no sacan turno: 50% de reacios a la vacuna</h5>
+          <p class="card-text">Los jóvenes tucumanos son reacios a la colocación de la vacuna contra el covid-19 [...]
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="Noticias.html" class="btn btn-success btn-sm">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="./img/imagen33.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">“La OMS ruega por vacunas para los países pobres”.</h5>
+          <p class="card-text">Hay naciones que están inoculando a población que no corre riesgo, mientras que el
+            mecanismo Covax se queda sin dosis [...] </p>
+        </div>
+        <div class="card-footer">
+          <a href="https://www.lagaceta.com.ar/nota/899696/actualidad/oms-ruega-vacunas-para-paises-pobres.html"
+            class="btn btn-success btn-sm">Ver más</a>
         </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+</body>
+
 </html>

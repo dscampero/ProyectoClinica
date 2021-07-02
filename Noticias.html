@@ -2,81 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <title>Centro Médico Tucumán</title>
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
+        <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark   ">
             <div class="container-fluid ">
-                <img src="https://trello-attachments.s3.amazonaws.com/60cbe62728384237ca13ec99/60d7419cf19b0e3c312b7623/16bda16bb1a80bcecccc19c181e48563/logoFinal.png"
-                    width="10%" height="10%" alt="logoclinica">
-                <!--<a class="navbar-brand" href="#">XV</a!-->
-                <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
+
+                <button class="navbar-toggler " type="button " data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+
+                        <li class=" nav-item ms-5   ">
+                            <a class="nav-link active " aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Institucional</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Profesionales</a>
+                            <a class="nav-link active " href="#">Profesionales</a>
                         </li>
-                        <li class="nav-item bg-success rounded-3 ">
-                            <a class="nav-link active" aria-current="page" href="#">Turnos</a>
+                        <li class="nav-item  bg rounded-3 ">
+                            <button class="btn btn " id="button-green" aria-current="page" href="#">Turnos</button>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Contacto</a>
                         </li>
 
-                        <li class="nav-item bg-success  rounded-3   ">
-                            <a class="nav-link active  " aria-current="page" href="#">Login</a>
-                        </li>
 
-
-
-
-                        <!--<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Desplegable
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>-->
                     </ul>
 
 
                     <form class="d-flex">
 
+                        <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
+                        <button class="btn btn-success me-3" id="button" type="submit">Buscar</button>
 
-                        <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Buscar</button>
+                        <button class="btn btn-outline-success" id="button" type="submit">Login</button>
                     </form>
                 </div>
             </div>
 
         </nav>
+        <!-- END NAVBAR -->
 
 
 
@@ -84,7 +66,7 @@
     <main>
         <!-- inicio de Card -->
         <!-- noticia 1 -->
-        <div class="card mb-3 mt-5 m-auto shadow" style="max-width: 80%;">
+        <div class="card mb-3 mt-5 m-auto shadow" id="noticias" name="noticias" style="max-width: 80%;">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="./img/imagenSinopharm.jpg" class="img-fluid rounded-start mt-5" alt="...">
