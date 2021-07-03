@@ -1,248 +1,407 @@
 * {
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/*-------- Titulos en carousel --------*/
+
+@media (min-width: 320px) {
+  #carousel-title {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  /*-------- Titulos en carousel --------*/
-  
-  @media (min-width: 320px) {
-    #carousel-title {
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-      z-index: 20;
-      color: white;
-      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
-      font-size: 12px;
-      font-weight: bolder;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+}
+
+@media (min-width: 375px) {
+  #carousel-title {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  
-  @media (min-width: 375px) {
-    #carousel-title {
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-      z-index: 20;
-      color: white;
-      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
-      font-size: 16px;
-      font-weight: bolder;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+}
+
+@media (min-width: 425px) {
+  #carousel-title {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+    font-size: 19px;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  
-  @media (min-width: 425px) {
-    #carousel-title {
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-      z-index: 20;
-      color: white;
-      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
-      font-size: 19px;
-      font-weight: bolder;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+}
+
+@media (min-width: 768px) {
+  #carousel-title {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  
-  @media (min-width: 768px) {
-    #carousel-title {
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-      z-index: 20;
-      color: white;
-      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
-      font-size: 30px;
-      font-weight: bolder;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+}
+
+@media (min-width: 1024px) {
+  #carousel-title {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  
-  @media (min-width: 1024px) {
-    #carousel-title {
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-      z-index: 20;
-      color: white;
-      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
-      font-size: 40px;
-      font-weight: bolder;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+}
+
+@media (min-width: 1440px) {
+  #carousel-title {
+    position: absolute;
+    bottom: 9%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  
-  @media (min-width: 1440px) {
-    #carousel-title {
-      position: absolute;
-      bottom: 9%;
-      left: 5%;
-      z-index: 20;
-      color: white;
-      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
-      font-size: 60px;
-      font-weight: bolder;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+}
+
+/*-------- Sub-titulos en carousel --------*/
+
+@media (min-width: 320px) {
+  #carousel-subtitle {
+    display: none;
   }
-  
-  /*-------- Sub-titulos en carousel --------*/
-  
-  @media (min-width: 320px) {
-    #carousel-subtitle {
-      display: none;
-    }
+}
+
+@media (min-width: 375px) {
+  #carousel-subtitle {
+    display: none;
   }
-  
-  @media (min-width: 375px) {
-      #carousel-subtitle {
-          display: none;
-        }
-      }
-  
-  @media (min-width: 425px) {
-    #carousel-subtitle {
-      display: none;
-    }
+}
+
+@media (min-width: 425px) {
+  #carousel-subtitle {
+    display: none;
   }
-  
-  @media (min-width: 768px) {
-    #carousel-subtitle {
-      display:block;
-      position: absolute;
-      bottom: 5%;
-      left: 5%;
-      z-index: 20;
-      color: white;
-      text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
-      font-size: 15px;
-    }
+}
+
+@media (min-width: 768px) {
+  #carousel-subtitle {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
+    font-size: 15px;
   }
-  
-  @media (min-width: 1024px) {
-    #carousel-subtitle {
-        display:block;
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-        z-index: 20;
-        color: white;
-        text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
-        font-size: 20px;
-      }
-    }
-  
-  @media (min-width: 1440px) {
-    #carousel-subtitle {
-        display:block;
-        position: absolute;
-        bottom: 6%;
-        left: 5%;
-        z-index: 20;
-        color: white;
-        text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
-        font-size: 25px;
-      }
-    }
-  
-  /*-------- Logo en Navbar --------*/
-  
-  /* xs */
+}
+
+@media (min-width: 1024px) {
+  #carousel-subtitle {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #carousel-subtitle {
+    display: block;
+    position: absolute;
+    bottom: 6%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
+    font-size: 25px;
+  }
+}
+
+/*-------- Logo en Navbar --------*/
+
+/* xs */
+#logoclinica {
+  width: 30%;
+  height: auto;
+}
+/* sm */
+@media (min-width: 768px) {
   #logoclinica {
-    width: 30%;
+    width: 20%;
+  }
+}
+/* md */
+@media (min-width: 992px) {
+  #logoclinica {
+    width: 10%;
+  }
+}
+/* lg */
+@media (min-width: 1200px) {
+  #logoclinica {
+    width: 10%;
+  }
+}
+
+/*-------- Imagen sobre covid --------*/
+
+/* xs */
+#imgprevencion {
+  width: 100%;
+  height: 100%;
+}
+/* sm */
+@media (min-width: 768px) {
+  #imgprevencion {
+    width: 100%;
+  }
+}
+/* md */
+@media (min-width: 992px) {
+  #imgprevencion {
+    width: 100%;
+  }
+}
+/* lg */
+@media (min-width: 1200px) {
+  #imgprevencion {
+    width: 100%;
+  }
+}
+
+/*-------- Texto covid --------*/
+
+#sintomas {
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: white;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+#aviso {
+  background-color: #008dc9;
+  padding-top: 47px;
+  margin: 0;
+}
+#tituloaviso {
+  font-size: 32px;
+  color: rgb(196, 176, 64);
+  font-weight: bolder;
+}
+#titulonovedades {
+  font-size: 27px;
+  color: #7dba2d;
+  margin-left: 24px;
+  font-family: "calibri", "Courier New", monospace;
+  margin-top: 2%;
+}
+
+#button-green {
+  background-color: #7dba2d;
+  font-weight: 400px;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#quitarsub {
+  text-decoration: none;
+
+  color: #37b3d8;
+}
+
+/*-------- Logo CMT en Footer --------*/
+
+@media (min-width: 320px) {
+  #logoFooter {
+    display: flex;
+    align-items: center;
+    width: 65%;
     height: auto;
   }
-  /* sm */
-  @media (min-width: 768px) {
-    #logoclinica {
-      width: 20%;
-    }
+}
+
+@media (min-width: 375px) {
+  #logoFooter {
+    width: 65%;
+    height: auto;
   }
-  /* md */
-  @media (min-width: 992px) {
-    #logoclinica {
-      width: 10%;
-    }
+}
+
+@media (min-width: 425px) {
+  #logoFooter {
+    width: 65%;
+    height: auto;
   }
-  /* lg */
-  @media (min-width: 1200px) {
-    #logoclinica {
-      width: 10%;
-    }
+}
+
+@media (min-width: 768px) {
+  #logoFooter {
+    width: 120%;
+    height: auto;
   }
-  
-  /*-------- Imagen sobre covid --------*/
-  
-  /* xs */
-  #imgprevencion {
+}
+
+@media (min-width: 1024px) {
+  #logoFooter {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  #logoFooter {
+    margin-top: 10%;
+    width: 80%;
+    height: auto;
+  }
+}
+
+/*-------- Logo ITAES en Footer --------*/
+
+@media (min-width: 320px) {
+  #logoItaes,
+  #textoAcreditacion {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) {
+  #logoItaes,
+  #textoAcreditacion {
+    display: none;
+  }
+}
+
+@media (min-width: 425px) {
+  #logoItaes,
+  #textoAcreditacion {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #logoItaes,
+  #textoAcreditacion {
+    display: block;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #logoItaes,
+  #textoAcreditacion {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  #logoItaes,
+  #textoAcreditacion {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    width: 50%;
+    height: auto;
+  }
+}
+
+/*-------- Mapa en Footer --------*/
+
+@media (min-width: 320px) {
+  #ubicacion {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 375px) {
+  #ubicacion {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 425px) {
+  #ubicacion {
+    display: flex;
+    align-items: center;
+    width: 96%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  #ubicacion {
+    display: flex;
+    align-items: center;
+    width: 120%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #ubicacion {
+    display: flex;
+    align-items: center;
+    width: 130%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #ubicacion {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100%;
   }
-  /* sm */
-  @media (min-width: 768px) {
-    #imgprevencion {
-      width: 100%;
-    }
-  }
-  /* md */
-  @media (min-width: 992px) {
-    #imgprevencion {
-      width: 100%;
-    }
-  }
-  /* lg */
-  @media (min-width: 1200px) {
-    #imgprevencion {
-      width: 100%;
-    }
-  }
-  
-  /*-------- Texto covid --------*/
-  
-  #sintomas {
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  
-    color: white;
-    font-size: 20px;
-    line-height: normal;
-    letter-spacing: normal;
-    font-style: normal;
-    font-stretch: normal;
-  }
-  
-  #aviso {
-    background-color: #008dc9;
-    padding-top: 47px;
-    margin: 0;
-  }
-  #tituloaviso {
-    font-size: 32px;
-    color: rgb(196, 176, 64);
-    font-weight: bolder;
-  }
-  #titulonovedades {
-    font-size: 27px;
-    color: #7dba2d;
-    margin-left: 24px;
-    font-family: "calibri", "Courier New", monospace;
-    margin-top: 2%;
-  }
-  
-  #button-green {
-    background-color: #7dba2d;
-    font-weight: 400px;
-    border-width: 0;
-    border-style: solid;
-    border-radius: 5px;
-  }
-  
-  #quitarsub {
-    text-decoration: none;
-  
-    color: #37b3d8;
-  }
-  
+}
