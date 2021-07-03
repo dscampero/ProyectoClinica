@@ -246,3 +246,50 @@
     color: #37b3d8;
   }
   
+
+  /*-------- Pagina de error --------*/
+  
+
+  #bodyError{
+
+    background: url(/img/404.jpg) fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.page-wrap {
+    min-height: 50vh;
+}
+
+#button404{
+
+   background-color: #7dba2d;
+   font-weight: 400px;
+   border-width: 0;
+   border-style: solid;
+   border-radius: 5px;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+
+
+#error404{
+
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
+    
+}
+
+#errorTitulo{
+
+    color: white;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
+}
+
