@@ -16,7 +16,7 @@
 
 <body>
   <!-- Start Navbar -->
-  <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark   ">
+  <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark ">
     <div class="container-fluid ">
       <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
       <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -41,17 +41,18 @@
             <a class="nav-link active " href="#">Profesionales</a>
           </li>
           <li class="nav-item  bg rounded-3 ">
-            <button class="btn btn " id="button-green" aria-current="page" href="#">Turnos</button>
+            <button class="btn btn fw-bolder" id="button-green" aria-current="page" href="#">Turnos</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            <a class="nav-link active" aria-current="page" href="#ubicacion">Contacto</a>
           </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
-          <button class="btn btn-success me-3" id="button" type="submit">Buscar</button>
+          <button class="btn btn me-3 fw-bold" id="button-green" type="submit">Buscar</button>
 
-          <a href="Error.html" target="_blank" class="btn btn-outline-success" id="button" type="submit"> Login </a>
+          <a href="Error.html" target="_blank" class="btn btn-outline-success" id="button-green" type="submit"> Login
+          </a>
         </form>
       </div>
     </div>
@@ -120,7 +121,7 @@
   <!--End Carrousel-->
 
   <!-- Start Avisos Protocolos covid-->
-  <div class="card mb-3 mt-3 shadow p-1">
+  <div class="card mb-3 mt-3 me-0 shadow p-3">
     <div class="row g-0">
       <div class="col-md-7">
         <img src="./img/card-prevencion.png" id="imgprevencion" name="imgprevencion" class="img-fluid"
@@ -130,17 +131,19 @@
         <div class="card-body" id="aviso" name="aviso">
           <h3 class="card-title text-center" id="tituloaviso" name="tituloaviso">¡Importante!</h3><br>
           <p class="card-text " id="sintomas" name="sintomas">
-          <ul>
-            <li> No asistir si presenta síntomas de covid (dolor de cabeza, náuseas, fiebre, cansancio.) </li>
-            <li> Se toma la temperatura al ingresar.</li>
-            <li> Presentarse 10 minutos antes del turno asignado.</li>
-            <li> No ir con acompañantes de no ser necesario. </li>
+          <div>
+            <ul style="font-size:large   ; font-weight: bold; color: white;">
+              <li> No asistir si presenta síntomas de covid (dolor de cabeza, náuseas, fiebre, cansancio.) </li>
+              <li> Se toma la temperatura al ingresar.</li>
+              <li> Presentarse 10 minutos antes del turno asignado.</li>
+              <li> No ir con acompañantes de no ser necesario. </li>
 
-            <li>
-              <p class="card-text" id="sintomas" name="sintomas"><small class="text">**Recuerde que puede reprogramar su
+              <br>
+              <p class="card-text" id="sintomas" name="sintomas"><small class="text">*Recuerde que puede reprogramar su
                   turno ante cualquier eventualidad.</small></p>
-            </li>
-          </ul>
+
+            </ul>
+          </div>
         </div>
       </div>
     </div>
