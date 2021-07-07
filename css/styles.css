@@ -176,69 +176,31 @@
 
 /*-------- Imagen sobre covid --------*/
 
-/* xs */
-#imgprevencion {
-  width: 100%;
-  height: 100%;
-}
-/* sm */
-@media (min-width: 768px) {
-  #imgprevencion {
-    width: 100%;
-  }
-}
-/* md */
-@media (min-width: 992px) {
-  #imgprevencion {
-    width: 100%;
-  }
-}
-/* lg */
-@media (min-width: 1200px) {
-  #imgprevencion {
-    width: 100%;
-  }
+#container-importante{
+    padding-top: 1px;
+    margin: 0;
+    
 }
 
-/*-------- Texto covid --------*/
-
-#sintomas li{
-  font-weight: bolder;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: normal;
-  font-style: normal;
-  font-stretch: normal;
+#cuerpo-importante{
+    
+    background-color: #008dc9;
+    
+}
+#titulo-importante{
+    font-size: 32px;
+    color: rgb(194, 166, 10);
+    font-weight: bolder;
 }
 
-#aviso {
-  background-color: #008dc9;
-  forced-color-adjust: #008dc9;
-  padding-top: 47px;
-  margin: 0;
-}
-#tituloaviso {
-  font-size: 32px;
-  color: rgb(196, 176, 64);
-  font-weight: bolder;
-}
-#titulonovedades {
-  font-size: 27px;
-  color: #7dba2d;
-  margin-left: 24px;
-  font-family: "calibri", "Courier New", monospace;
-  margin-top: 2%;
-}
+  #button-green{
 
-#button-green {
-  background-color: #7dba2d;
-  font-weight: 400px;
-  border-width: 0;
-  border-style: solid;
-  border-radius: 5px;
-}
+ background-color: #7dba2d;
+font-weight: 400px;
+border-width: 0;
+border-style: solid;
+border-radius: 5px;
+}  
 
 #quitarsub {
   text-decoration: none;
