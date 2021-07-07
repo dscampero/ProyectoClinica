@@ -423,11 +423,8 @@
     border-radius: 5px;
   }
   
-
-
   #quitarsub {
     text-decoration: none;
-  
     color: #37b3d8;
   }
   
@@ -441,7 +438,6 @@
     padding: 0;
     margin: 0;
 }
-
 
 .page-wrap {
     min-height: 50vh;
@@ -457,8 +453,6 @@
    font-size: 20px;
 }
 
-
-
 #error404{
     color: white;
     font-size: x-large;
@@ -469,5 +463,5 @@
 #errorTitulo{
     color: white;
     text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
-    
+  
   }
