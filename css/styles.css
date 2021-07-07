@@ -385,11 +385,8 @@ border-radius: 5px;
     border-radius: 5px;
   }
   
-
-
   #quitarsub {
     text-decoration: none;
-  
     color: #37b3d8;
   }
   
@@ -403,7 +400,6 @@ border-radius: 5px;
     padding: 0;
     margin: 0;
 }
-
 
 .page-wrap {
     min-height: 50vh;
@@ -419,8 +415,6 @@ border-radius: 5px;
    font-size: 20px;
 }
 
-
-
 #error404{
     color: white;
     font-size: x-large;
@@ -431,5 +425,5 @@ border-radius: 5px;
 #errorTitulo{
     color: white;
     text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
-    
+  
   }
