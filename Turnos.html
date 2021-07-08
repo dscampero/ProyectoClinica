@@ -27,7 +27,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class=" nav-item ms-5   ">
-            <a class="nav-link active " aria-current="page" href="#">Inicio</a>
+            <a href="Home.html"  class="nav-link active" aria-current="page"> Inicio  </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Institucional</a>
@@ -60,6 +60,8 @@
   </nav>
   <!-- End Navbar -->
 
+  <!-- Start Form -->
+
   <div class="py-5 banner" style="background-image:url(./img/Version2.jpg); background-repeat: cover;">
     <div class="container">
       <div class="row">
@@ -83,7 +85,7 @@
                 <label class="font-12 text-uppercase" style="font-weight: 500">Teléfono</label>
                 <input type="text" class="form-control" placeholder="Por ej: 3815033262" />
               </div>
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-6" id="inputTurno" name="inputTurno">
                 <label class="font-12 text-uppercase" style="font-weight: 500">Email</label>
                 <input type="email" class="form-control" placeholder="usuario@ejemplo.com" />
               </div>
@@ -108,7 +110,7 @@
                   <option value="6">Particular</option>
                 </select>
               </div>
-              <div class="form-group col-md-6">
+              <div class="form-group col-md-6" id="inputTurno" name="inputTurno">
                 <select class="form-select" aria-label="font-12 text-uppercase mb-2"style="font-weight: 500;">
                   <option selected>Profesional</option>
                   <option value="1">Dr. Lucas Marengo</option>
@@ -118,14 +120,13 @@
                   <option value="5">Dra. Mariana Corbalán</option>
                 </select>
               </div>
-
             </div>
             <div class="text-center">
-              <button class="m-0 border-0 py-3 btn btn-success btn-block rounded-0 text-white text-uppercase shadow mt-1" style="background-color:#7dba2d; font-weight: 500; text-shadow: 0.2px 0.2px 0.ch black;">
-									<a href="http://google.com" style="color: white ;text-decoration: none;">RESERVAR TURNO</a>
-
+              <button class="m-0 border-0 py-3 btn btn-success btn-block rounded-1 text-white text-uppercase mt-1"
+              style="background-color:#7dba2d; font-weight: 500; text-shadow: 0.2px 0.2px 0.ch black;"
+              data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<a style="color: white ;text-decoration: none;">RESERVAR TURNO</a>
 							</button>
- 
             </div>
           </div>
         </div>
@@ -133,16 +134,38 @@
     </div>
   </div>
 
+    <!-- Start Modal Turnos -->
+    <div class="modal fade rounded-3" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark p-2">
+            <img src="./img/CMT_color.png" class="image-fluid ms-1" style="width: 6%;">
+            <h5 class="modal-title text-white ms-3" id="exampleModalLabel">Centro Médico Tucumán</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="font-weight: 500; font-style: italic; justify-content:left;">
+            <p class="mb-0">El turno solicitado fue confirmado, rogamos asistir en horario. Recordar que el uso de barbijo o cubreboca es OBLIGATORIO.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="bm-0 border-0 py-1 btn btn-success btn-block rounded-1 text-white text-uppercase  mt-1"
+            style="background-color:#7dba2d; font-weight: 500; text-shadow: 0.2px 0.2px 0.ch black;" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Turnos -->
+  <!-- End Form -->
+
 
 
   <!-- Start Footer -->
     <footer class="bg-dark text-white">
-    <div class="row w-100">
+    <div class="row">
       <!-- Start Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mt-5">
         <div>
           <!-- Content -->
-          <img src="./img/logoFooter.png" class="image-fluid" id="logoFooter" alt="logoFooter">
+            <img src="./img/logoFooter.png" class="image-fluid" id="logoFooter" alt="logoFooter">
           <p id="textoAcreditacion" name="textoAcreditacion">
             <img class="me-3" src="./img/acred.png" class="image-fluid " id="logoItaes" alt="logoItaes">
             Instituto Técnico para la Acreditación de Establecimientos de Salud
