@@ -2,168 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="./img/favicon.ico" />
-    <title>Centro Médico Tucumán</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <title>Centro Médico Tucumán</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
 
-    <header>
-        <!-- START NAVBAR -->
-        <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark   ">
-            <div class="container-fluid ">
-                <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
+  <header>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark   ">
+      <div class="container-fluid ">
+        <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
 
-                <button class="navbar-toggler " type="button " data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <button class="navbar-toggler " type="button " data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <li class=" nav-item ms-5   ">
-                            <a class="nav-link active " aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Institucional</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active " href="#">Profesionales</a>
-                        </li>
-                        <li class="nav-item  bg rounded-3 ">
-                            <button class="btn btn " id="button-green" aria-current="page" href="#">Turnos</button>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                        </li>
+            <li class=" nav-item ms-5   ">
+              <a href="Home.html" class="nav-link active " aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Institucional</a>
+            </li>
 
+            <li class="nav-item">
+              <a href="Home.html" class="nav-link active" aria-current="page"> Novedades </a>
+            </li>
 
-                    </ul>
-
-
-                    <form class="d-flex">
-
-                        <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
-                        <button class="btn btn-success me-3" id="button" type="submit">Buscar</button>
-
-                        <button class="btn btn-outline-success" id="button" type="submit">Login</button>
-                    </form>
-                </div>
-            </div>
-
-        </nav>
-        <!-- END NAVBAR -->
+            <li class="nav-item">
+              <a class="nav-link active " href="#">Profesionales</a>
+            </li>
+            <li class="nav-item  bg rounded-3 ">
+              <a href="Turnos.html" class="btn btn fw-bolder" id="button-green" aria-current="page"> Turnos </a>
+              <!-- <button class="btn btn " id="button-green" aria-current="page" href="#">Turnos</button> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#ubicacion">Contacto</a>
+            </li>
 
 
+          </ul>
 
-    </header>
-    <main>
-        <div><br><br><br><br><br><br></div>
-        <!-- inicio de Card -->
-        <!-- noticia 1 -->
-        <div class="card mb-3 m-auto" name="noticias" style="max-width: 80%;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="./img/colocaciondevacuna.jpg" class=" img-fluid rounded-start mt-5" alt="...">
 
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-title">“Mayores de 30 que no sacan turno: 50% de reacios a la vacuna”.</h3>
-                        <p class="card-text pt-1">Los jóvenes tucumanos son reacios a la colocación de la vacuna contra
-                            el covid-19. El ministerio de salud de la provincia advirtió una disminución del registro de
-                            mayores de 30 años para acceder a la inmunización. “Del padron total de ese grupo, saco
-                            turno solo un 50%”. <br>“Estamos muy contentos con la evolución de una campaña vacunatoria
-                            que lleva más de 803.000 dosis colocadas. Tenemos buena respuesta de la población”, y dijo
-                            que la vacunación ya alcanzó al 72 % de pacientes mayores de 30 años. <br>En cuanto al nuevo
-                            grupo etario habilitado, dijo: “Estamos con más de 46 mil turnos programados para personas
-                            de 25 a 30 años”.
-                        </p>
-                        <p class="card-text text-center"><small class="text-muted"><a href="Home.html"
-                                    class="btn btn-success btn-sm">Volver</a></small></p>
-                    </div>
-                </div>
-            </div>
+          <form class="d-flex">
+
+            <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
+            <button class="btn btn me-3 fw-bold" id="button-green" type="submit">Buscar</button>
+            <a href="Error.html" target="_blank" class="btn btn-outline-success" id="button-green" id="quitarsub"
+              type="submit"> Login
+            </a>
+
+          </form>
+        </div>
+      </div>
+
+    </nav>
+    <!-- END NAVBAR -->
+
+
+
+  </header>
+  <main>
+    <div><br><br><br><br><br><br></div>
+    <!-- inicio de Card -->
+    <!-- noticia 1 -->
+    <div class="card mb-3 m-auto" name="noticias" style="max-width: 80%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./img/colocaciondevacuna.jpg" class=" img-fluid rounded-start mt-5" alt="...">
 
         </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title">“Mayores de 30 que no sacan turno: 50% de reacios a la vacuna”.</h3>
+            <p class="card-text pt-1">Los jóvenes tucumanos son reacios a la colocación de la vacuna contra
+              el covid-19. El ministerio de salud de la provincia advirtió una disminución del registro de
+              mayores de 30 años para acceder a la inmunización. “Del padron total de ese grupo, saco
+              turno solo un 50%”. <br>“Estamos muy contentos con la evolución de una campaña vacunatoria
+              que lleva más de 803.000 dosis colocadas. Tenemos buena respuesta de la población”, y dijo
+              que la vacunación ya alcanzó al 72 % de pacientes mayores de 30 años. <br>En cuanto al nuevo
+              grupo etario habilitado, dijo: “Estamos con más de 46 mil turnos programados para personas
+              de 25 a 30 años”.
+            </p>
+            <p class="card-text text-center"><small class="text-muted"><a href="Home.html"
+                  class="btn btn-success btn-sm">Volver</a></small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
-    </main>
-<!-- Start Footer -->
-<footer class="bg-dark text-white">
+  </main>
+  <!-- Start Footer -->
+  <footer class="bg-dark text-white">
     <div class="row">
       <!-- Start Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mt-5">
-        <div >
+        <div>
           <!-- Content -->
           <img src="./img/logoFooter.png" class="image-fluid" id="logoFooter" alt="logoFooter">
           <p id="textoAcreditacion" name="textoAcreditacion">
-              <img  class= "me-3" src="./img/acred.png" class="image-fluid " id="logoItaes" alt="logoItaes">
-              Instituto Técnico para la Acreditación de Establecimientos de Salud
-            </p>
+            <img class="me-3" src="./img/acred.png" class="image-fluid " id="logoItaes" alt="logoItaes">
+            Instituto Técnico para la Acreditación de Establecimientos de Salud
+          </p>
         </div>
       </div>
       <!-- End Grid column -->
 
       <!-- Start Grid column -->
-      <div class="col-md-2 col-lg-2 mt-5 col-xl-3 mx-auto text-center mb-4 d-flex justify-content-center align-items-center">
+      <div
+        class="col-md-2 col-lg-2 mt-5 col-xl-3 mx-auto text-center mb-4 d-flex justify-content-center align-items-center">
         <!-- Social media -->
         <div>
           <p>
             <i class="fas fa-map-marker-alt me-1"></i>
-            General Paz 444 –  CP:4000 – San Miguel de Tucumán
+            General Paz 444 – CP:4000 – San Miguel de Tucumán
           </p>
           <p>
             <i class="fas fa-phone-alt me-1"></i>
             Call Center: +54 (0381) 4502600
           </p>
           <section class="mb-4 border" id="redes">
-            
+
             <!-- Facebook -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-white"
-              href="http://facebook.com"
-              target="_blank"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
+            <a class="btn btn-link btn-floating btn-lg text-white" href="http://facebook.com" target="_blank"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
             <!-- Twitter -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-white"
-              href="http://twitter.com"
-              target="_blank"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-twitter"></i
-            ></a>
+            <a class="btn btn-link btn-floating btn-lg text-white" href="http://twitter.com" target="_blank"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
             <!-- Youtube -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-white"
-              href="http://youtube.com"
-              target="_blank"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-youtube"></i
-            ></a>
-      
+            <a class="btn btn-link btn-floating btn-lg text-white" href="http://youtube.com" target="_blank"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a>
+
             <!-- Instagram -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-white"
-              href="http://instagram.com"
-              target="_blank"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-instagram"></i
-            ></a>
+            <a class="btn btn-link btn-floating btn-lg text-white" href="http://instagram.com" target="_blank"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
           </section>
         </div>
 
@@ -173,34 +158,32 @@
       <!-- Start Grid column -->
       <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4 mt-5 d-flex justify-content-center align-items-center">
         <!-- Google Map -->
-        <iframe
-        id="ubicacion"
-        name= "ubicacion"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1047253960746!2d-65.20744758439048!3d-26.83662119649984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0f17e3bd0f%3A0x4a08ecdc38226349!2sGral.%20Paz%20444%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1625334380247!5m2!1ses-419!2sar"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
+        <iframe id="ubicacion" name="ubicacion"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1047253960746!2d-65.20744758439048!3d-26.83662119649984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0f17e3bd0f%3A0x4a08ecdc38226349!2sGral.%20Paz%20444%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1625334380247!5m2!1ses-419!2sar"
+          style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
       </div>
       <!-- End Grid column -->
     </div>
-  </div>
+    </div>
 
 
-<!-- Start Copyright -->
-<div class="text-center p-2 bg-dark">
-  © 2021 Copyright | Centro Médico Tucumán | General Paz 444 - San Miguel de Tucumán
-</div>
-<!-- End Copyright -->
-</footer>
-<!-- End Footer -->
+    <!-- Start Copyright -->
+    <div class="text-center p-2 bg-dark">
+      © 2021 Copyright | Centro Médico Tucumán | General Paz 444 - San Miguel de Tucumán
+    </div>
+    <!-- End Copyright -->
+  </footer>
+  <!-- End Footer -->
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
