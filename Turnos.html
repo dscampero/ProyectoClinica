@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <title>Centro Médico Tucumán</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark ">
+    <div class="container-fluid ">
+      <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
+      <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class=" nav-item ms-5   ">
+            <a href="Home.html"  class="nav-link active" aria-current="page"> Inicio  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Institucional</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#titulonovedades">Novedades</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Profesionales</a>
+          </li>
+          <li class="nav-item  bg rounded-3 ">
+            <a href="Turnos.html"  class="btn btn fw-bolder" id="button-green" aria-current="page"> Turnos  </a>
+            <!-- <button class="btn btn fw-bolder" id="button-green" aria-current="page" href="Turnos.html">Turnos</button> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#ubicacion">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
+          <button class="btn btn me-3 fw-bold" id="button-green" type="submit">Buscar</button>
+
+          <a href="Error.html" target="_blank" class="btn btn-outline-success" id="button-green" type="submit"> Login
+          </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Start Form -->
+
+  <div class="py-5 banner" style="background-image:url(./img/Version2.jpg); background-repeat: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-lg-5 mt-4">
+          <h3 class="my-3 text-white  text-uppercase" style="font-weight: bold;">Solicite su turno</h3>
+          <div class="bg-white shadow p-3" style="border-radius: 2%;">
+            <div class="form-row border-bottom">
+              <div class="p-3 left border-right">
+                <label class="font-12 text-uppercase mb-2" style="font-weight: 500">Nombre y apellido del paciente</label>
+                <input type="text" class="form-control" placeholder="Ingrese aquí nombre y apellido" />
+              </div>
+            </div>
+            <div class="form-row border-bottom">
+              <div class="p-3 left border-right">
+                <label class="font-12 text-uppercase mb-2" style="font-weight: 500">DNI (sin puntos)</label>
+                <input type="text" class="form-control" placeholder="Ingrese aquí su DNI" />
+              </div>
+            </div>
+            <div class="row border-bottom p-3">
+              <div class="form-group col-md-6">
+                <label class="font-12 text-uppercase" style="font-weight: 500">Teléfono</label>
+                <input type="text" class="form-control" placeholder="Por ej: 3815033262" />
+              </div>
+              <div class="form-group col-md-6" id="inputTurno" name="inputTurno">
+                <label class="font-12 text-uppercase" style="font-weight: 500">Email</label>
+                <input type="email" class="form-control" placeholder="usuario@ejemplo.com" />
+              </div>
+            </div>
+            
+            <div class="form-row p-3 position-relative">
+              <label class="font-12 text-uppercase mb-2" style="font-weight: 500">Seleccione fecha de turno</label>
+
+              <div class="form-group">
+                <input class="form-control" type="date" required>
+              </div>
+            </div>
+            <div class="row p-3">
+              <div class="form-group col-md-6">
+                <select class="form-select" aria-label="font-12 text-uppercase mb-2" style="font-weight: 500;">
+                  <option selected>Obra Social</option>
+                  <option value="1">Boreal</option>
+                  <option value="2">OSECAC</option>
+                  <option value="3">OSDE</option>
+                  <option value="4">Prensa</option>
+                  <option value="5">Red de Seg</option>
+                  <option value="6">Particular</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6" id="inputTurno" name="inputTurno">
+                <select class="form-select" aria-label="font-12 text-uppercase mb-2"style="font-weight: 500;">
+                  <option selected>Profesional</option>
+                  <option value="1">Dr. Lucas Marengo</option>
+                  <option value="2">Dra. Maria Catanna</option>
+                  <option value="3">Dr. Nicolás Mitre</option>
+                  <option value="4">Dra Luciana Curubeto</option>
+                  <option value="5">Dra. Mariana Corbalán</option>
+                </select>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="m-0 border-0 py-3 btn btn-success btn-block rounded-1 text-white text-uppercase mt-1"
+              style="background-color:#7dba2d; font-weight: 500; text-shadow: 0.2px 0.2px 0.ch black;"
+              data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<a style="color: white ;text-decoration: none;">RESERVAR TURNO</a>
+							</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Start Modal Turnos -->
+    <div class="modal fade rounded-3" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark p-2">
+            <img src="./img/CMT_color.png" class="image-fluid ms-1" style="width: 6%;">
+            <h5 class="modal-title text-white ms-3" id="exampleModalLabel">Centro Médico Tucumán</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="font-weight: 500; font-style: italic; justify-content:left;">
+            <p class="mb-0">El turno solicitado fue confirmado, rogamos asistir en horario. Recordar que el uso de barbijo o cubreboca es OBLIGATORIO.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="bm-0 border-0 py-1 btn btn-success btn-block rounded-1 text-white text-uppercase  mt-1"
+            style="background-color:#7dba2d; font-weight: 500; text-shadow: 0.2px 0.2px 0.ch black;" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Turnos -->
+  <!-- End Form -->
+
+
+
+  <!-- Start Footer -->
+    <footer class="bg-dark text-white">
+    <div class="row">
+      <!-- Start Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mt-5">
+        <div>
+          <!-- Content -->
+            <img src="./img/logoFooter.png" class="image-fluid" id="logoFooter" alt="logoFooter">
+          <p id="textoAcreditacion" name="textoAcreditacion">
+            <img class="me-3" src="./img/acred.png" class="image-fluid " id="logoItaes" alt="logoItaes">
+            Instituto Técnico para la Acreditación de Establecimientos de Salud
+          </p>
+        </div>
+      </div>
+      <!-- End Grid column -->
+
+      <!-- Start Grid column -->
+      <div
+        class="col-md-2 col-lg-2 mt-5 col-xl-3 mx-auto text-center mb-4 d-flex justify-content-center align-items-center">
+        <!-- Social media -->
+        <div>
+          <p>
+            <i class="fas fa-map-marker-alt me-1"></i>
+            General Paz 444 – CP:4000 – San Miguel de Tucumán
+          </p>
+          <p>
+            <i class="fas fa-phone-alt me-1"></i>
+            Call Center: +54 (0381) 4502600
+          </p>
+          <section class="mb-4 border" id="redes">
+
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-white" href="http://facebook.com" target="_blank"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-link btn-floating btn-lg text-white" href="http://twitter.com" target="_blank"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+            <!-- Youtube -->
+            <a class="btn btn-link btn-floating btn-lg text-white" href="http://youtube.com" target="_blank"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-white" href="http://instagram.com" target="_blank"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+          </section>
+        </div>
+
+      </div>
+      <!-- End Grid column -->
+
+      <!-- Start Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4 mt-5 d-flex justify-content-center align-items-center">
+        <!-- Google Map -->
+        <iframe id="ubicacion" name="ubicacion"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1047253960746!2d-65.20744758439048!3d-26.83662119649984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0f17e3bd0f%3A0x4a08ecdc38226349!2sGral.%20Paz%20444%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1625334380247!5m2!1ses-419!2sar"
+          style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <!-- End Grid column -->
+    </div>
+    </div>
+
+
+    <!-- Start Copyright -->
+    <div class="text-center p-2 bg-dark">
+      © 2021 Copyright | Centro Médico Tucumán | General Paz 444 - San Miguel de Tucumán
+    </div>
+    <!-- End Copyright -->
+  </footer>
+  <!-- End Footer -->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
