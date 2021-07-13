@@ -137,3 +137,18 @@ text-decoration: none;
 
 color: #37b3d8;
 }
+
+/* institucional */
+#titulosinstitucional{
+        font-size: 50px;
+    margin-left: 40px;
+    margin-top: 80px;
+
+
+}
+#subtitinstitucional{
+    font-size: 27px;
+    color: #7dba2d;
+    font-family: "calibri", "Courier New", monospace;
+
+}
