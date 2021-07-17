@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <!-- Start Navbar -->
+  <!-- Start-Navbar -->
   <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark ">
     <div class="container-fluid ">
       <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
@@ -52,23 +52,16 @@
           <button class="btn btn me-3 fw-bold" id="button-green" type="submit">Buscar</button>
           <!-- <a href="Error.html" target="_blank" class="btn btn-outline-success" id="button-green" id="quitarsub"
             type="submit"> Login </a> -->
-
-
-
-
           <button type="button" class="btn btn-outline-success   ms-2 " id="button-green" data-bs-toggle="modal"
             data-bs-target="#modalForm">
             Login
-
           </button>
         </form>
-
       </div>
     </div>
     </div>
-
   </nav>
-  <!-- End Navbar -->
+  <!-- End-Navbar -->
 
   <!--Start Carrousel-->
   <div class="caru mt-lg-4">
@@ -131,7 +124,7 @@
   </div>
   <!--End Carrousel-->
 
-  <!-- Start Avisos Protocolos covid-->
+  <!-- Start-Aviso-Protocolos-Covid-->
 
   <div class="container-fluid mt-3 shadow " id="container-importante" name="container-importante">
     <div class="row ">
@@ -148,16 +141,13 @@
             <li> Se toma la temperatura al ingresar.</li>
             <li> Presentarse 10 minutos antes del turno asignado.</li>
             <li> No ir con acompañantes de no ser necesario. </li><br>
-
           <p class="text"><small class="text">*Recuerde que puede reprogramar su turno ante
               cualquier eventualidad.</small></p>
         </ul>
       </div>
     </div>
   </div>
-
-
-  <!-- End Avisos Protocolos covid-->
+  <!-- End-Aviso-Protocolos-Covid-->
 
   <!-- Start Titulo "Novedades" -->
   <div class="mt-4 ">
@@ -332,32 +322,31 @@
           <form>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="username" name="username" placeholder="" />
+              <input type="email" class="form-control" id="username" maxlength="50" name="username" placeholder="" />
             </div>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password" name="password" placeholder="" />
+              <input type="password" class="form-control" id="password" minlength="8" maxlength="50" name="password"
+                placeholder="" />
             </div>
             <div class="mb-3 form-check" style="font-weight:500; font-style:italic">
               <input type="checkbox" class="form-check-input" id="rememberMe" />
               <label class="form-check-label" for="rememberMe">Recordarme</label>
               <button type="submit" class="btn btn-success float-end"
-              style="background-color:#7dba2d ;font-weight: 500;text-shadow: 0.2px 0.2px 0.ch black; ;">INGRESAR</button>
+                style="background-color:#7dba2d ;font-weight: 500;text-shadow: 0.2px 0.2px 0.ch black; ;">INGRESAR</button>
             </div>
             <div class="modal-footer d-inline-flex ms-4  " style="font-weight:500; font-style:italic ;">
-              <p> ¿No tienes cuenta? </p> <button type="button"   class="  btn  ms-3  " style="background-color:rgb(165, 165, 164);font-weight: 500;font-style: italic;" id="" data-bs-toggle="modal"
-                data-bs-target="#registro-modal">
+              <p> ¿No tienes cuenta? </p> <button type="button" class="  btn  ms-3  "
+                style="background-color:rgb(165, 165, 164);font-weight: 500;font-style: italic;" id=""
+                data-bs-toggle="modal" data-bs-target="#registro-modal">
                 Registrarse
-    
               </button>
-              
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-
   <!-- Modal-Login-End -->
 
   <!-- Registro-Modal-Start -->
@@ -373,20 +362,22 @@
           <form>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">APELLIDO Y NOMBRE</label>
-              <input type="text" class="form-control" id="username" name="username" placeholder="" />
+              <input type="text" class="form-control" id="username" minlength="20" maxlength="40" name="username"
+                placeholder="" />
             </div>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">CORREO ELECTRÓNICO</label>
-              <input type="email" class="form-control" id="password" name="password" placeholder="" />
+              <input type="email" class="form-control" id="password" minlength="8" maxlength="40" name="password"
+                placeholder="" />
             </div>
             <div class="mb-3 " style="font-weight:500; font-style:italic">
               <label class="form-label">TELÉFONO</label>
-              <input type="tel" class="form-control" id="username" name="username" placeholder="" />
+              <input type="tel" class="form-control" id="username" minlength="10" maxlength="25" name="username"
+                placeholder="" />
             </div>
-            <div class="mb-3 " style="font-weight:500; font-style:italic">
-              <label class="form-label">CONSULTA (opcional)</label>
-              <textarea name="textarea" rows="2" cols="50">Escriba su consulta aquí...</textarea>            
-
+            <div class="mb-3  " style="font-weight:500;  font-style:italic">
+              <label class="form-label ">CONSULTA (opcional)</label>
+              <textarea name="textarea" maxlength="500" rows="2" cols="50">Escriba su consulta aquí...</textarea>
               </button>
               <button type="submit" class="btn btn-success float-start "
                 style="background-color:#7dba2d ;font-weight: 500;text-shadow: 0.2px 0.2px 0.ch black; ;">ENVIAR</button>
@@ -396,8 +387,7 @@
       </div>
     </div>
   </div>
-
-   <!-- Registro-Modal-End -->
+  <!-- Registro-Modal-End -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
