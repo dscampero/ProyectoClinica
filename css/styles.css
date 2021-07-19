@@ -488,5 +488,190 @@
 }
 
 
-/*-------- Error --------*/
+/*-------- Profesionales --------*/
+
+.team-grid {
+  color:#313437;
+  background-color:#fff;
+}
+
+.team-grid p {
+  color:#7d8285;
+}
+
+.team-grid h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .team-grid h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.team-grid .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.team-grid .intro p {
+  margin-bottom:0;
+}
+
+.team-grid .people {
+  padding:50px 0;
+}
+
+
+.team-grid .item .box {
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:280px;
+  position:relative;
+  overflow:hidden;
+  margin-bottom: 25px;
+}
+
+.team-grid .item .cover {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(125,186,45,0.75);
+  transition:opacity 0.15s ease-in;
+  opacity:0;
+  padding-top:80px;
+  color:#fff;
+  text-shadow:2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.team-grid .item:hover .cover {
+  opacity:1;
+}
+
+.team-grid .item .name {
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.team-grid .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:white;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+  letter-spacing:2px;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+/***-------------------------------------------*/
+
+.backgroundImage {
+  position: relative;
+  height: 60vh;
+  background-image: url('../img/Contact.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+
+#inputContact{
+  border-radius: 20px;
+}
+
+
+
+#botonForm{
+margin-left: 86%;
+}
+
+
+
+@media (min-width: 320px) {
+  #input-title{
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+    text-shadow: 0.5px 1px 26px black;
+    margin-left: 15px;
+    line-height: 120%;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 20;
+  }
+
+  #form-text{
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .contactForm {
+    position: absolute;
+    right: 5%;
+    top: 18%;
+    bottom: 8%;
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 2%;
+    border-radius: 35px;
+    box-shadow: 0.5px 2px 8px black;
+    
+  }
+  .contactForm {
+    position: absolute;
+    right: 5%;
+    top: 18%;
+    bottom: 8%;
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 2%;
+    border-radius: 35px;
+    box-shadow: 0.5px 2px 8px black;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  #form-text{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  #input-title{
+    color: white;
+    font-size: 40px;
+    font-weight:bold;
+    text-shadow: 0.5px 1px 26px black;
+    margin-left: 15px;
+    line-height: 120%;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 50;
+  }
+}
+
+@media (min-width: 1024px) {
+
+
+@media (min-width: 1440px) {
+
+}
+
 

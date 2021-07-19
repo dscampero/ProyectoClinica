@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <title>Centro Médico Tucumán</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark ">
+    <div class="container-fluid ">
+      <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
+      <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class=" nav-item  ms-xs-0 ms-sm-0 ms-md-0 ms-lg-5 ms-xl-5   ">
+            <a class="nav-link active " aria-current="page" href="Home.html">Inicio</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="MisionyValores.html">Institucional</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#titulonovedades">Novedades</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active " href="Profesionales.html">Profesionales</a>
+          </li>
+          <li class="nav-item  bg rounded-3 ">
+            <a href="Turnos.html" class="btn btn fw-bolder" id="button-green" aria-current="page"> Turnos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#ubicacion">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
+          <a href="Error.html" class="btn btn fw-bolder" id="button-green" aria-current="page"> Buscar </a>
+          <button type="button" class="btn btn-outline-success ms-1  fw-bold" id="button-green" data-bs-toggle="modal"
+            data-bs-target="#modalForm" style="font-weight: 500;">
+            Login
+          </button>
+        </form>
+
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <!-- End Navbar -->
+
+
+
+
+
+
+
+
+   <!-- Start Modal Turnos -->
+   <div class="modal fade rounded-3" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark p-2">
+          <img src="./img/CMT_color.png" class="image-fluid ms-1" style="width: 6%;">
+          <h5 class="modal-title text-white ms-3" id="exampleModalLabel">Centro Médico Tucumán</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-weight: 500; font-style: italic; justify-content:left;">
+          <p class="mb-0">El turno solicitado fue confirmado, rogamos asistir en horario. Recordar que el uso de barbijo o cubreboca es OBLIGATORIO.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="bm-0 border-0 py-1 btn btn-success btn-block rounded-1 text-white text-uppercase  mt-1"
+          style="background-color:#7dba2d; font-weight: 500; text-shadow: 0.2px 0.2px 0.ch black;" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Turnos -->
+<!-- End Form -->
+
+<h2 class="fw-light" id="titulosinstitucional">Nuestro Equipo de trabajo</h2>
+<div class="intro">
+        <p class="mb-5" style="margin-left: 41px;">En <b>CMT</b> contamos con un staff de médicos altamente capacitados para brindarte la mejor atención. Debajo podrás conocerlos junto a sus respectivos horarios de atención.  </p>
+    </div>
+    <!-- <div class="card shadow"> -->
+        <div class="team-grid">
+            <div class="container">
+                <div class="row people shadow mb-5">
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof1.png)">
+                            <div class="cover">
+                                <h3 class="name">Dr. Facundo del Pino</h3>
+                                <p class="title">Traumatólogo<br>MP-747</p>
+                                <p class="title">LUN - MIER - JUE<br>9 a 12 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof2.png)">
+                            <div class="cover">
+                                <h3 class="name">Dra. Natalia Blanche</h3>
+                                <p class="title">Tocoginecóloga<br>MP-1430</p>
+                                <p class="title">LUN - MIER - JUE<br>9 a 12 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof4.png)">
+                            <div class="cover">
+                                <h3 class="name">Dra. Alejandra Singh</h3>
+                                <p class="title">Dermatóloga<br>MP-558</p>
+                                <p class="title">LUN A JUE<br>15 a 20 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof3.png)">
+                            <div class="cover">
+                                <h3 class="name">Dr. Joaquín Martínez</h3>
+                                <p class="title">Infectólogo<br>MP-1431</p>
+                                <p class="title">LUN - MIER - JUE<br>9 a 12 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof7.png)">
+                            <div class="cover">
+                                <h3 class="name">Dra. Pilar de Zavalía</h3>
+                                <p class="title">Pediatra<br>MP-1125</p>
+                                <p class="title">MAR Y JUE<br>15 a 19 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof5.png)">
+                            <div class="cover">
+                                <h3 class="name">Dr. Pablo Pace</h3>
+                                <p class="title">Urólogo<br>MP-865</p>
+                                <p class="title">MAR Y JUE<br>15 a 19 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof6.png)">
+                            <div class="cover">
+                                <h3 class="name">Dr. Carlos Terán</h3>
+                                <p class="title">Nefrólogo<br>MP-1865</p>
+                                <p class="title">MAR Y JUE<br>10 a 12.30 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof9.png)">
+                            <div class="cover">
+                                <h3 class="name">Dra. Agustina Burgos</h3>
+                                <p class="title">Traumatóloga<br>MP-1895</p>
+                                <p class="title">MAR Y JUE<br>10 a 12.30 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof8.png)">
+                            <div class="cover">
+                                <h3 class="name">Dr. Juan Burgos</h3>
+                                <p class="title">Proctólogo<br>MP-2895</p>
+                                <p class="title">LUN A JUE<br>10 a 12.30 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof12.png)">
+                            <div class="cover">
+                                <h3 class="name">Dr. Carlos Álvarez</h3>
+                                <p class="title">Clínico<br>MP-2335</p>
+                                <p class="title">LUN A MIER<br>10 a 12.30 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof10.png)">
+                            <div class="cover">
+                                <h3 class="name">Dra. Emilia Attias</h3>
+                                <p class="title">Neuróloga<br>MP-2365</p>
+                                <p class="title">LUN A MIER<br>10 a 12.30 hs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 item">
+                        <div class="box" style="background-image:url(./img/prof11.png)">
+                            <div class="cover">
+                                <h3 class="name">Dra. Marta López</h3>
+                                <p class="title">Clínica<br>MP-3365</p>
+                                <p class="title">LUN A MIER<br>10 a 12.30 hs</p>
+                            </div>
+                        </div>
+                    </div>
+    <!-- </div> -->
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Start Footer -->
+  <footer class="bg-dark text-white">
+  <div class="row">
+    <!-- Start Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mt-5">
+      <div>
+        <!-- Content -->
+          <img src="./img/logoFooter.png" class="image-fluid" id="logoFooter" alt="logoFooter">
+        <p id="textoAcreditacion" name="textoAcreditacion">
+          <img class="me-3" src="./img/acred.png" class="image-fluid " id="logoItaes" alt="logoItaes">
+          Instituto Técnico para la Acreditación de Establecimientos de Salud
+        </p>
+      </div>
+    </div>
+    <!-- End Grid column -->
+
+    <!-- Start Grid column -->
+    <div
+      class="col-md-2 col-lg-2 mt-5 col-xl-3 mx-auto text-center mb-4 d-flex justify-content-center align-items-center">
+      <!-- Social media -->
+      <div>
+        <p>
+          <i class="fas fa-map-marker-alt me-1"></i>
+          General Paz 444 – CP:4000 – San Miguel de Tucumán
+        </p>
+        <p>
+          <i class="fas fa-phone-alt me-1"></i>
+          Call Center: +54 (0381) 4502600
+        </p>
+        <section class="mb-4 border" id="redes">
+
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-white" href="http://facebook.com" target="_blank"
+            role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg text-white" href="http://twitter.com" target="_blank"
+            role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+          <!-- Youtube -->
+          <a class="btn btn-link btn-floating btn-lg text-white" href="http://youtube.com" target="_blank"
+            role="button" data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg text-white" href="http://instagram.com" target="_blank"
+            role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+        </section>
+      </div>
+
+    </div>
+    <!-- End Grid column -->
+
+    <!-- Start Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4 mt-5 d-flex justify-content-center align-items-center">
+      <!-- Google Map -->
+      <iframe id="ubicacion" name="ubicacion"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1047253960746!2d-65.20744758439048!3d-26.83662119649984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0f17e3bd0f%3A0x4a08ecdc38226349!2sGral.%20Paz%20444%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1625334380247!5m2!1ses-419!2sar"
+        style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    <!-- End Grid column -->
+  </div>
+  </div>
+
+
+  <!-- Start Copyright -->
+  <div class="text-center p-2 bg-dark">
+    © 2021 Copyright | Centro Médico Tucumán | General Paz 444 - San Miguel de Tucumán
+  </div>
+  <!-- End Copyright -->
+</footer>
+<!-- End Footer -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+  integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
