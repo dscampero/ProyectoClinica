@@ -6,133 +6,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="./img/favicon.ico" />
   <title>Centro Médico Tucumán</title>
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark ">
+    <div class="container-fluid ">
+      <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
+      <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-    <header>
-        <!-- START NAVBAR -->
-        <nav class="navbar navbar-expand-lg  navbar-dark   fixed-top py-2   bg-dark   ">
-            <div class="container-fluid ">
-                <img src="./img/logo-blanco.png" class="image-fluid" id="logoclinica" alt="logoclinica">
+          <li class=" nav-item  ms-xs-0 ms-sm-0 ms-md-0 ms-lg-5 ms-xl-5   ">
+            <a class="nav-link active " aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="MisionyValores.html">Institucional</a>
+          </li>
 
-                <button class="navbar-toggler " type="button " data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#titulonovedades">Novedades</a>
+          </li>
 
-                        <li class=" nav-item ms-5   ">
-                            <a class="nav-link active " aria-current="page" href="Home.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="Institucional.html">Institucional</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active " href="#">Profesionales</a>
-                        </li>
-                        <li class="nav-item  bg rounded-3 ">
-                            <button class="btn btn " id="button-green" aria-current="page" href="Tunos.html">Turnos</button>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Ubicacion">Contacto</a>
-                        </li>
-
-
-                    </ul>
-
-
-                    <form class="d-flex">
-
-                        <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
-                        <button class="btn btn me-3 fw-bold" id="button-green" type="submit">Buscar</button>
-
-                        <button type="button" class="btn btn-outline-success   ms-2 " id="button-green" data-bs-toggle="modal"
-            data-bs-target="#modalForm">
-            Login
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Profesionales</a>
+          </li>
+          <li class="nav-item  bg rounded-3 ">
+            <a href="Turnos.html" class="btn btn fw-bolder" id="button-green" aria-current="page"> Turnos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#ubicacion">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
+          <button class="btn btn me-2 fw-bold" id="button-green" type="submit">Buscar</button>
+          <button type="button" class="btn btn-outline-success ms-0 " id="button-green" data-bs-toggle="modal"
+            data-bs-target="#modalForm" style="font-weight: 500;">
+            LOGIN
           </button>
-                    </form>
-                </div>
-            </div>
+        </form>
 
-        </nav>
-        <!-- END NAVBAR -->
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <!-- End Navbar -->
 
 
 
     </header>
-    <main>
-        <div><br><br><br><br></div>
-        <!-- inicio de Card -->
-        <!-- start noticia 2 -->
-        <div class="card mb-3 m-auto"  name="noticias" style="max-width: 80%;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="./img/colocaciondevacuna.jpg" class=" img-fluid rounded-start mt-5" alt="...">
 
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-title">“Mayores de 30 que no sacan turno: 50% de reacios a la vacuna”.</h3>
-                        <p class="card-text pt-1">Los jóvenes tucumanos son reacios a la colocación de la vacuna contra
-                            el covid-19. El ministerio de salud de la provincia advirtió una disminución del registro de
-                            mayores de 30 años para acceder a la inmunización. “Del padron total de ese grupo, saco
-                            turno solo un 50%”. <br>“Estamos muy contentos con la evolución de una campaña vacunatoria
-                            que lleva más de 803.000 dosis colocadas. Tenemos buena respuesta de la población”, y dijo
-                            que la vacunación ya alcanzó al 72 % de pacientes mayores de 30 años. <br>En cuanto al nuevo
-                            grupo etario habilitado, dijo: “Estamos con más de 46 mil turnos programados para personas
-                            de 25 a 30 años”.
-                        </p>
-                        <p class="card-text text-center"><small class="text-muted"><a href="Home.html"
-                                    class="btn btn-success btn-sm">Volver</a></small></p>
-                    </div>
-                </div>
-            </div>
-
-  </header>
   <main>
-    <div><br><br><br><br><br><br></div>
-    <!-- inicio de Card -->
-    <!-- noticia 1 -->
-    <div class="card mb-3 m-auto" name="noticias" style="max-width: 80%;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="./img/colocaciondevacuna.jpg" class=" img-fluid rounded-start mt-5" alt="...">
-
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h3 class="card-title">“Mayores de 30 que no sacan turno: 50% de reacios a la vacuna”.</h3>
-            <p class="card-text pt-1">Los jóvenes tucumanos son reacios a la colocación de la vacuna contra
-              el covid-19. El ministerio de salud de la provincia advirtió una disminución del registro de
-              mayores de 30 años para acceder a la inmunización. “Del padron total de ese grupo, saco
-              turno solo un 50%”. <br>“Estamos muy contentos con la evolución de una campaña vacunatoria
-              que lleva más de 803.000 dosis colocadas. Tenemos buena respuesta de la población”, y dijo
-              que la vacunación ya alcanzó al 72 % de pacientes mayores de 30 años. <br>En cuanto al nuevo
-              grupo etario habilitado, dijo: “Estamos con más de 46 mil turnos programados para personas
-              de 25 a 30 años”.
-            </p>
-            <p class="card-text text-center"><small class="text-muted"><a href="Home.html"
-                  class="btn btn-success btn-sm">Volver</a></small></p>
+    <!-- noticia 2 -->
+    <div class="py-5 mt-5">
+      <div class="card mb-3 m-auto" name="noticias" style="max-width: 80%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/colocaciondevacuna.jpg" class=" img-fluid rounded-start mt-5" alt="...">
+  
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">“Mayores de 30 que no sacan turno: 50% de reacios a la vacuna”.</h3>
+              <p class="card-text pt-1">Los jóvenes tucumanos son reacios a la colocación de la vacuna contra
+                el covid-19. El ministerio de salud de la provincia advirtió una disminución del registro de
+                mayores de 30 años para acceder a la inmunización. “Del padron total de ese grupo, saco
+                turno solo un 50%”. <br>“Estamos muy contentos con la evolución de una campaña vacunatoria
+                que lleva más de 803.000 dosis colocadas. Tenemos buena respuesta de la población”, y dijo
+                que la vacunación ya alcanzó al 72 % de pacientes mayores de 30 años. <br>En cuanto al nuevo
+                grupo etario habilitado, dijo: “Estamos con más de 46 mil turnos programados para personas
+                de 25 a 30 años”.
+              </p>
+              <p class="card-text text-center"><small class="text-muted"><a href="Home.html"
+                class="btn btn-success" id="button-green">VOLVER A INICIO</a></small></p>
+            </div>
           </div>
         </div>
-<<<<<<< HEAD
       </div>
-
     </div>
-
-=======
-        <!-- End noticia 2 -->
->>>>>>> edfdfc0a309df7a2091e40552c9bbf4aca0e74bb
-
   </main>
-  <!-- Start Footer -->
-  <footer class="bg-dark text-white">
+
+   <!-- Start Footer -->
+  <footer class="bg-dark text-white" style="left: 0; right: 0;">
     <div class="row">
       <!-- Start Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mt-5">
@@ -217,25 +183,25 @@
           <form>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="username" maxlength="50" name="username" placeholder="" />
+              <input type="email" class="form-control" id="username" name="username" placeholder="" />
             </div>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password" minlength="8" maxlength="50" name="password"
-                placeholder="" />
+              <input type="password" class="form-control" id="password" name="password" placeholder="" />
             </div>
             <div class="mb-3 form-check" style="font-weight:500; font-style:italic">
               <input type="checkbox" class="form-check-input" id="rememberMe" />
               <label class="form-check-label" for="rememberMe">Recordarme</label>
               <button type="submit" class="btn btn-success float-end"
-                style="background-color:#7dba2d ;font-weight: 500;text-shadow: 0.2px 0.2px 0.ch black; ;">INGRESAR</button>
+              style="background-color:#7dba2d ;font-weight: 500;text-shadow: 0.2px 0.2px 0.ch black; ;">INGRESAR</button>
             </div>
             <div class="modal-footer d-inline-flex ms-4  " style="font-weight:500; font-style:italic ;">
-              <p> ¿No tienes cuenta? </p> <button type="button" class="  btn  ms-3  "
-                style="background-color:rgb(165, 165, 164);font-weight: 500;font-style: italic;" id=""
-                data-bs-toggle="modal" data-bs-target="#registro-modal">
+              <p> ¿No tienes cuenta? </p> <button type="button"   class="  btn  ms-3  " style="background-color:rgb(165, 165, 164);font-weight: 500;font-style: italic;" id="" data-bs-toggle="modal"
+                data-bs-target="#registro-modal">
                 Registrarse
+    
               </button>
+              
             </div>
           </form>
         </div>
@@ -257,22 +223,20 @@
           <form>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">APELLIDO Y NOMBRE</label>
-              <input type="text" class="form-control" id="username" minlength="20" maxlength="40" name="username"
-                placeholder="" />
+              <input type="text" class="form-control" id="username" name="username" placeholder="" />
             </div>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">CORREO ELECTRÓNICO</label>
-              <input type="email" class="form-control" id="password" minlength="8" maxlength="40" name="password"
-                placeholder="" />
+              <input type="email" class="form-control" id="password" name="password" placeholder="" />
             </div>
             <div class="mb-3 " style="font-weight:500; font-style:italic">
               <label class="form-label">TELÉFONO</label>
-              <input type="tel" class="form-control" id="username" minlength="10" maxlength="25" name="username"
-                placeholder="" />
+              <input type="tel" class="form-control" id="username" name="username" placeholder="" />
             </div>
-            <div class="mb-3  " style="font-weight:500;  font-style:italic">
-              <label class="form-label ">CONSULTA (opcional)</label>
-              <textarea name="textarea" maxlength="500" rows="2" cols="50">Escriba su consulta aquí...</textarea>
+            <div class="mb-3 " style="font-weight:500; font-style:italic">
+              <label class="form-label">CONSULTA (opcional)</label>
+              <textarea name="textarea" rows="2" cols="50">Escriba su consulta aquí...</textarea>            
+
               </button>
               <button type="submit" class="btn btn-success float-start "
                 style="background-color:#7dba2d ;font-weight: 500;text-shadow: 0.2px 0.2px 0.ch black; ;">ENVIAR</button>
@@ -282,9 +246,8 @@
       </div>
     </div>
   </div>
-  <!-- Registro-Modal-End -->
 
-
+   <!-- Registro-Modal-End -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

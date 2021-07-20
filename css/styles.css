@@ -176,35 +176,31 @@
 
 /*-------- Imagen sobre covid --------*/
 
-#container-importante{
-    padding-top: 1px;
-    margin: 0;
-    
+#container-importante {
+  padding-top: 1px;
+  margin: 0;
 }
 
-#cuerpo-importante{
-    
-    background-color: #008dc9;
-    
-}
-#titulo-importante{
-    font-size: 32px;
-    color: rgb(194, 166, 10);
-    font-weight: bolder;
+#cuerpo-importante {
+  background-color: #008dc9;
 }
 
-  #button-green{
+#titulo-importante {
+  font-size: 32px;
+  color: rgb(194, 166, 10);
+  font-weight: bolder;
+}
 
- background-color: #7dba2d;
-font-weight: 400px;
-border-width: 0;
-border-style: solid;
-border-radius: 5px;
-}  
+#button-green {
+  background-color: #7dba2d;
+  font-weight: 400px;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 5px;
+}
 
 #quitarsub {
   text-decoration: none;
-
   color: #37b3d8;
 }
 
@@ -276,7 +272,7 @@ border-radius: 5px;
 @media (min-width: 320px) {
   #logoItaes,
   #textoAcreditacion {
-    display:none
+    display: none;
   }
 }
 
@@ -383,104 +379,94 @@ border-radius: 5px;
     height: 100%;
   }
 }
- /*-------- Pagina de error --------*/
 
-  #titulonovedades {
-    font-size: 27px;
-    font-weight: 500;
-    color: #7dba2d;
-    margin-left: 24px;
-    /* font-family: "calibri", "Courier New", monospace; */
-    margin-top: 2%;
-  }
-  
-  #button-green {
-    background-color: #7dba2d;
-    font-weight: 400px;
-    border-width: 0;
-    border-style: solid;
-    border-radius: 5px;
-  }
-  
-  #quitarsub {
-    text-decoration: none;
-    color: #37b3d8;
-  }
-  
+/*-------- Novedades --------*/
 
-  /*-------- Pagina de error --------*/
-
-  #bodyError{
-    background: url(/img/404.jpg) fixed; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-    margin: 0;
+#titulonovedades {
+  font-size: 27px;
+  font-weight: 500;
+  color: #7dba2d;
+  margin-left: 24px;
+  margin-top: 2%;
 }
 
-/* institucional */
-#titulosinstitucional{
-        font-size: 50px;
-    margin-left: 40px;
-    margin-top: 80px;
-
-
+#button-green {
+  background-color: #7dba2d;
+  font-weight: 400px;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 5px;
 }
-#subtitinstitucional{
-    font-size: 27px;
-    color: #7dba2d;
-    font-family: "calibri", "Courier New", monospace;
+
+#quitarsub {
+  text-decoration: none;
+  color: #37b3d8;
 }
+
+/*-------- Institucional --------*/
+
+#titulosinstitucional {
+  font-size: 50px;
+  margin-left: 40px;
+  margin-top: 80px;
+}
+
+#subtitinstitucional {
+  font-size: 27px;
+  color: #7dba2d;
+  /* font-family: "calibri", "Courier New", monospace; */
+}
+
 .page-wrap {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
-#button404{
-   background-color: #7dba2d;
-   font-weight: 400px;
-   border-width: 0;
-   border-style: solid;
-   border-radius: 5px;
-   text-decoration: none;
-   font-size: 20px;
+#button404 {
+  background-color: #7dba2d;
+  font-weight: 400px;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-#error404{
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
+#error404 {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
 }
 
-#errorTitulo{
-    color: white;
-    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
-  }
+#errorTitulo {
+  color: white;
+  text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
+}
 
-  /*-------- Formulario de turnos --------*/
+/*-------- Formulario de turnos --------*/
 
 @media (min-width: 320px) {
   #inputTurno {
-margin-top: 8%;
+    margin-top: 8%;
   }
 }
 
 @media (min-width: 375px) {
   #inputTurno {
     margin-top: 8%;
-      }
+  }
 }
 
 @media (min-width: 425px) {
   #inputTurno {
     margin-top: 8%;
-      }
+  }
 }
 
 @media (min-width: 768px) {
   #inputTurno {
     margin-top: 0%;
-      }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -500,4 +486,7 @@ margin-top: 8%;
     height: 100%;
   }
 }
+
+
+/*-------- Error --------*/
 
