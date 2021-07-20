@@ -210,8 +210,8 @@
   #logoFooter {
     display: flex;
     align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 19%;
+    margin-right: 10%;
     width: 65%;
     height: auto;
   }
@@ -414,33 +414,6 @@
 #subtitinstitucional {
   font-size: 27px;
   color: #7dba2d;
-  /* font-family: "calibri", "Courier New", monospace; */
-}
-
-.page-wrap {
-  min-height: 50vh;
-}
-
-#button404 {
-  background-color: #7dba2d;
-  font-weight: 400px;
-  border-width: 0;
-  border-style: solid;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-#error404 {
-  color: white;
-  font-size: x-large;
-  font-weight: bold;
-  text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
-}
-
-#errorTitulo {
-  color: white;
-  text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.6);
 }
 
 /*-------- Formulario de turnos --------*/
@@ -469,140 +442,213 @@
   }
 }
 
-@media (min-width: 1024px) {
-  #ubicacion {
-    display: flex;
-    align-items: center;
-    width: 130%;
-    height: 90%;
-  }
-}
-
-@media (min-width: 1440px) {
-  #ubicacion {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-
 /*-------- Profesionales --------*/
 
 .team-grid {
-  color:#313437;
-  background-color:#fff;
+  color: #313437;
+  background-color: #fff;
 }
 
 .team-grid p {
-  color:#7d8285;
+  color: #7d8285;
 }
 
 .team-grid h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .team-grid h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
   }
 }
 
 .team-grid .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .team-grid .intro p {
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
 .team-grid .people {
-  padding:50px 0;
+  padding: 50px 0;
 }
 
-
 .team-grid .item .box {
-  text-align:center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
-  height:280px;
-  position:relative;
-  overflow:hidden;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 25px;
 }
 
 .team-grid .item .cover {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background-color:rgba(125,186,45,0.75);
-  transition:opacity 0.15s ease-in;
-  opacity:0;
-  padding-top:80px;
-  color:#fff;
-  text-shadow:2px 2px 5px rgba(0,0,0,0.15);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(125, 186, 45, 0.75);
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  padding-top: 80px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 .team-grid .item:hover .cover {
-  opacity:1;
+  opacity: 1;
 }
 
 .team-grid .item .name {
-  font-weight:bold;
-  margin-bottom:8px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .team-grid .item .title {
-  text-transform:uppercase;
-  font-weight:bold;
-  color:white;
-  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
-  letter-spacing:2px;
-  font-size:13px;
-  margin-bottom:20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 20px;
 }
 
-/***-------------------------------------------*/
+/*-------- Formulario de Contacto --------*/
 
 .backgroundImage {
   position: relative;
-  height: 60vh;
-  background-image: url('../img/Contact.jpg');
+  height: 100vh;
+  background-image: url("../img/Contact.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 0px;
 }
 
-
-#inputContact{
+#inputContact {
   border-radius: 20px;
 }
 
-
-
-#botonForm{
-margin-left: 86%;
-}
-
-
-
 @media (min-width: 320px) {
-  #input-title{
+  #input-title {
     color: white;
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
+    text-shadow: 0.5px 1px 26px black;
+    margin-left: 15px;
+    line-height: 120%;
+    position: absolute;
+    margin-top: 15px;
+    z-index: 20;
+  }
+
+  .contactForm {
+    position: absolute;
+    right: 3%;
+    left: 3%;
+    top: 13%;
+    bottom: 3%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2%;
+    border-radius: 35px;
+    box-shadow: 0.5px 2px 8px black;
+  }
+
+  #form-text {
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 8px;
+    margin-bottom: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #bigInputContact {
+    display: none;
+  }
+  #littleInputContact {
+    border-radius: 20px;
+  }
+
+  #botonForm {
+    margin-top: 0px;
+    margin-left: 66%;
+  }
+}
+
+@media (min-width: 375px) {
+  #input-title {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0.5px 1px 26px black;
+    margin-left: 15px;
+    line-height: 120%;
+    position: absolute;
+    margin-top: 15px;
+    z-index: 20;
+  }
+
+  .contactForm {
+    position: absolute;
+    right: 3%;
+    left: 3%;
+    top: 18%;
+    bottom: 3%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2%;
+    border-radius: 35px;
+    box-shadow: 0.5px 2px 8px black;
+  }
+
+  #botonForm {
+    margin-left: 72%;
+  }
+}
+
+@media (min-width: 425px) {
+  #botonForm {
+    margin-left: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  #botonForm {
+    margin-left: 82%;
+  }
+
+  .contactForm {
+    position: absolute;
+    right: 5%;
+    left: 22%;
+    top: 18%;
+    bottom: 11%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2%;
+    border-radius: 35px;
+    box-shadow: 0.5px 2px 8px black;
+  }
+}
+
+@media (min-width: 1024px) {
+  #input-title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
     text-shadow: 0.5px 1px 26px black;
     margin-left: 15px;
     line-height: 120%;
@@ -611,67 +657,98 @@ margin-left: 86%;
     z-index: 20;
   }
 
-  #form-text{
+  .contactForm {
+    position: absolute;
+    right: 3%;
+    left: 36%;
+    top: 12%;
+    bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2%;
+    border-radius: 35px;
+    box-shadow: 0.5px 2px 8px black;
+  }
+
+  #form-text {
     color: white;
     font-weight: bold;
-    font-size: small;
+    font-size: x-large;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
   }
-  
-  .contactForm {
-    position: absolute;
-    right: 5%;
-    top: 18%;
-    bottom: 8%;
-    background-color: rgba(0, 0, 0, 0.60);
-    padding: 2%;
-    border-radius: 35px;
-    box-shadow: 0.5px 2px 8px black;
-    
-  }
-  .contactForm {
-    position: absolute;
-    right: 5%;
-    top: 18%;
-    bottom: 8%;
-    background-color: rgba(0, 0, 0, 0.60);
-    padding: 2%;
-    border-radius: 35px;
-    box-shadow: 0.5px 2px 8px black;
+
+  #bigInputContact {
+    display: block;
+    border-radius: 20px;
   }
 
+  #littleInputContact {
+    display: none;
+  }
+
+  #botonForm {
+    margin-left: 88%;
+  }
 }
 
-
-@media (min-width: 768px) {
-  #form-text{
+@media (min-width: 1440px) {
+  #input-title {
     color: white;
+    font-size: 55px;
     font-weight: bold;
-    font-size: large;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  
-  #input-title{
-    color: white;
-    font-size: 40px;
-    font-weight:bold;
     text-shadow: 0.5px 1px 26px black;
     margin-left: 15px;
     line-height: 120%;
     position: absolute;
     margin-top: 20px;
-    z-index: 50;
+    z-index: 20;
+  }
+
+  .contactForm {
+    position: absolute;
+    right: 3%;
+    left: 40%;
+    top: 20%;
+    bottom: 18%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2%;
+    border-radius: 35px;
+    box-shadow: 0.5px 2px 8px black;
+  }
+
+  #form-text {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #bigInputContact {
+    display: block;
+    border-radius: 20px;
+  }
+
+  #littleInputContact {
+    display: none;
+  }
+
+  #botonForm {
+    margin-left: 87%;
   }
 }
 
-@media (min-width: 1024px) {
-
-
-@media (min-width: 1440px) {
-
+/*Control de inputs*/
+input:invalid {
+  border: 0.1px solid red;
 }
 
+textArea:invalid {
+  border: 0.1px solid red;
+}
 
+select:invalid {
+  color: red;
+}
