@@ -659,7 +659,7 @@
 
   .contactForm {
     position: absolute;
-    right: 3%;
+    right: 1%;
     left: 36%;
     top: 12%;
     bottom: 5%;
@@ -740,7 +740,7 @@
   }
 }
 
-/*Control de inputs*/
+/* --- Validacion de inputs --- */
 input:invalid {
   border: 0.1px solid red;
 }
