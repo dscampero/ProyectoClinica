@@ -48,7 +48,7 @@
           <a href="Error.html" class="btn btn fw-bolder" id="button-green" aria-current="page"> Buscar </a>
           <button type="button" class="btn btn-outline-success ms-1  fw-bold" id="button-green" data-bs-toggle="modal"
             data-bs-target="#modalForm" style="font-weight: 500;">
-            Login
+            Acceso
           </button>
         </form>
       </div>
@@ -56,7 +56,42 @@
     </div>
   </nav>
   <!-- End-Navbar -->
-
+  <!-- Modal-Acceso-Start -->
+  <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header  bg-dark p-2 ">
+          <img src="./img/CMT_color.png" class="image-fluid ms-1" style="width: 6%;">
+          <h5 class="modal-title text-white ms-3" id="exampleModalLabel">Centro Médico Tucumán</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3" style="font-weight:500; font-style:italic">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="username" maxlength="30" name="username" placeholder="ejemplo@ejemplo.com" required />
+            </div>
+            <div class="mb-3" style="font-weight:500; font-style:italic">
+              <label class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" minlength="8" maxlength="12" name="password"
+                placeholder="Ingrese entre 8 y 12 carácteres alfanuméricos" required />
+            </div>
+            <div class="" style="font-weight:400; font-style:italic">
+              <button type="submit" class="btn btn-success mt-3 float-end border-0"
+                style="background-color:#7dba2d ;font-weight: 500;text-shadow: 0.2px 0.2px 0.ch black;">INGRESAR</button>
+              <a href="" id="Registro" name="Registro" data-bs-toggle="modal" data-bs-target="#registro-modal">
+                Crear cuenta nueva
+              </a>
+            </div>
+            <div class="" style="font-weight:400; font-style:italic">
+              <a href="Error.html">Recuperar contraseña</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal-Acceso-End -->
   <!-- Start Form -->
   <div class="py-5 banner" style="background-image:url(./img/Version2.jpg); background-repeat: cover;">
     <div class="container">
@@ -304,43 +339,6 @@
 
 
 
-  <!-- Modal-Login-Start -->
-  <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header  bg-dark p-2 ">
-          <img src="./img/CMT_color.png" class="image-fluid ms-1" style="width: 6%;">
-          <h5 class="modal-title text-white ms-3" id="exampleModalLabel">Centro Médico Tucumán</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3" style="font-weight:500;">
-              <label class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="username" name="username" placeholder="" />
-            </div>
-            <div class="mb-3" style="font-weight:500;">
-              <label class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password" name="password" placeholder="" />
-            </div>
-            <div class="mb-3 form-check" style="font-weight:500;">
-              <input type="checkbox" class="form-check-input" id="rememberMe" />
-              <label class="form-check-label" for="rememberMe">Recúerdarme</label>
-              <button type="submit" class="btn btn-success float-end border-0"
-              style="background-color:#7dba2d ;font-weight: 500;text-shadow: 0.2px 0.2px 0.ch black;" href="">INGRESAR</button>
-            </div>
-            <div class="modal-footer d-inline-flex border-0" style="font-weight:500; font-style: italic;">
-              <p>¿No tienes cuenta?</p><button type="button" class="btn" style="background-color:rgb(165, 165, 164);font-weight: 500;font-style: italic;"  href="" data-bs-toggle="modal"
-                data-bs-target="#registro-modal">
-                Regístrate
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal-Login-End -->
 
   <!-- Start Registro-Modal -->
   <div class="modal fade" id="registro-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
