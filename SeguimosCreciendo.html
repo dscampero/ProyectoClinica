@@ -46,9 +46,9 @@
         <form class="d-flex">
           <input class="form-control me-3" type="search" placeholder="Búsqueda" aria-label="Search">
           <a href="Error.html" class="btn btn fw-bolder" id="button-green" aria-current="page"> Buscar </a>
-          <button type="button" class="btn btn-outline-success ms-1  fw-bold" id="button-green" data-bs-toggle="modal"
+          <button type="button" class="btn btn-outline-success ms-3  fw-bold" id="button-green" data-bs-toggle="modal"
             data-bs-target="#modalForm" style="font-weight: 500;">
-            Login
+            Acceso
           </button>
         </form>
       </div>
@@ -101,7 +101,7 @@
 
   <!-- Start Footer -->
   <footer class="bg-dark text-white" style="left: 0; right: 0;">
-    <div class="row">
+    <div class="row container-fluid">
       <!-- Start Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 mt-5">
         <div>
@@ -170,7 +170,7 @@
   </footer>
   <!-- End Footer -->
 
-  <!-- Modal-Login-Start -->
+  <!-- Modal-Acceso-Start -->
   <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -183,12 +183,12 @@
           <form>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="username" maxlength="50" name="username" placeholder="ejemplo@ejemplo.com" />
+              <input type="email" class="form-control" id="username" maxlength="30" name="username" placeholder="ejemplo@ejemplo.com" required />
             </div>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">Contraseña</label>
               <input type="password" class="form-control" id="password" minlength="8" maxlength="12" name="password"
-                placeholder="Ingrese entre 8 y 12 carácteres alfanuméricos" />
+                placeholder="Ingrese entre 8 y 12 carácteres alfanuméricos" required />
             </div>
             <div class="" style="font-weight:400; font-style:italic">
               <button type="submit" class="btn btn-success mt-3 float-end border-0"
@@ -220,13 +220,13 @@
           <form>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">Apellido y Nombre</label>
-              <input type="text" class="form-control" id="username" minlength="20" maxlength="40" name="username"
-                placeholder="" />
+              <input type="text" class="form-control" id="username" minlength="8" maxlength="40" name="username"
+                placeholder="Ingrese Apellido y Nombre" required />
             </div>
             <div class="mb-3" style="font-weight:500; font-style:italic">
               <label class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="password" minlength="8" maxlength="40" name="password"
-                placeholder="Ingrese entre 8 y 12 carácteres alfanuméricos" />
+              <input type="email" class="form-control" id="password" minlength="8" maxlength="30" name="password"
+                placeholder="Ingrese entre 8 y 30 carácteres alfanuméricos" required />
             </div>
             <div class="mb-3 " style="font-weight:500; font-style:italic">
               <label class="form-label">Teléfono</label>
